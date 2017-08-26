@@ -1,3 +1,8 @@
+dc_annuaire:
+    resource: "@DCAnnuaireBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
 app:
     resource: '@AppBundle/Controller/'
     type: annotation
