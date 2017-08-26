@@ -62,6 +62,7 @@ class ComposerStaticInit971b5e6116b27919d64e874daadd79b3
         'F' => 
         array (
             'Fig\\Link\\' => 9,
+            'FOS\\UserBundle\\' => 15,
         ),
         'D' => 
         array (
@@ -74,10 +75,6 @@ class ComposerStaticInit971b5e6116b27919d64e874daadd79b3
         'C' => 
         array (
             'Composer\\CaBundle\\' => 18,
-        ),
-        'A' => 
-        array (
-            'AppBundle\\' => 10,
         ),
     );
 
@@ -186,6 +183,10 @@ class ComposerStaticInit971b5e6116b27919d64e874daadd79b3
         array (
             0 => __DIR__ . '/..' . '/fig/link-util/src',
         ),
+        'FOS\\UserBundle\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/friendsofsymfony/user-bundle',
+        ),
         'Doctrine\\Instantiator\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/instantiator/src/Doctrine/Instantiator',
@@ -210,10 +211,10 @@ class ComposerStaticInit971b5e6116b27919d64e874daadd79b3
         array (
             0 => __DIR__ . '/..' . '/composer/ca-bundle/src',
         ),
-        'AppBundle\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/src/AppBundle',
-        ),
+    );
+
+    public static $fallbackDirsPsr4 = array (
+        0 => __DIR__ . '/../..' . '/src',
     );
 
     public static $prefixesPsr0 = array (
@@ -281,6 +282,7 @@ class ComposerStaticInit971b5e6116b27919d64e874daadd79b3
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit971b5e6116b27919d64e874daadd79b3::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit971b5e6116b27919d64e874daadd79b3::$prefixDirsPsr4;
+            $loader->fallbackDirsPsr4 = ComposerStaticInit971b5e6116b27919d64e874daadd79b3::$fallbackDirsPsr4;
             $loader->prefixesPsr0 = ComposerStaticInit971b5e6116b27919d64e874daadd79b3::$prefixesPsr0;
             $loader->classMap = ComposerStaticInit971b5e6116b27919d64e874daadd79b3::$classMap;
 
